@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>React Universal Example</title>
+    <style>
+      *, *:before, *:after { box-sizing: border-box; }
+    </style>
+  </head>
+  <body>
+    <div id="content"><%- content %></div>
+  </body>
+  <!-- http://stackoverflow.com/questions/20978946/facebook-react-js-how-do-you-render-statefull-components-on-the-server -->
+  <script>
+    var colors = <%- json %>
+  </script>
+  <script src="client.bundle.js"></script>
+</html>
